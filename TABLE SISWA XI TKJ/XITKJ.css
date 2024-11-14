@@ -1,0 +1,139 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto:wght@400;500;700;900&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    }
+
+body {
+    font-family: 'Poppins', sans-serif;
+}
+
+/* Navigation Bar */
+.navbar {
+    background-color: #fff;
+    padding: 15px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.1);
+    position: fixed;
+    width: 100%;
+    top: 0;
+    z-index: 2;
+}
+
+.navbar-left {
+    display: flex;
+    align-items: center;
+}
+
+.navbar-left img {
+    width: 50px;
+    height: 50px;
+    margin-right: 10px;
+}
+
+.navbar-right ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+}
+
+.navbar-right li {
+    margin-right: 20px;
+}
+
+.navbar-right a {
+    text-decoration: none;
+    color: #333;
+    font-weight:600;
+    padding: 10px 15px;
+    border-radius: 5px;
+    font-size: 1rem;
+    transition: all 0.3s ease;
+}
+
+.navbar-right a:hover{
+    color: #e25300;
+}
+
+.btn-start a:hover {
+    background-color: #e25300;
+    color: white;
+}
+
+.btn-start a {
+    background-color: #007bff;
+    color: #fff;
+}
+
+main {
+    text-align: center;
+    padding: 40px;
+}
+
+.table {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 20px;
+}
+
+table {
+    width: 50%; 
+    border-collapse: collapse;
+    text-align: left;
+    margin-top: 4.5rem;
+}
+
+.content-table thead tr {
+    background-color: #ff7300;
+    color: #fff;
+}
+
+.content-table tbody tr:nth-of-type(even) {
+    background-color: #6c9bff;
+    color: white;
+}
+
+table tr td, table tr th {
+    border: 1px solid black;
+    padding: 12px;
+}
+
+.table th{
+    text-align: center;
+}
+
+table tr td:nth-child(2) {
+    text-align: center; 
+    vertical-align: middle; 
+}
+
+table tr td:last-child {
+    text-align: center; 
+    width: 120px; 
+}
+
+h1 {
+    font-size: 1.5em;
+    margin-bottom: 30px;
+    font-weight: bold;
+    text-align: center; 
+}
+
+.line{
+    height: 1px;
+    width: 100%;
+    background-color: #6F6767;
+    margin-top: 1rem;
+}
+
+.title-card {
+    font-size: 2rem;
+    margin-top: 4.5rem;
+    text-align: center;
+}

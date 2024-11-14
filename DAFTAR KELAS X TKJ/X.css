@@ -1,0 +1,580 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto:wght@400;500;700;900&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Poppins', sans-serif;
+    background-color: #f5f5f5;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+/* Navigation Bar */
+.navbar {
+    background-color: #fff;
+    padding: 15px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.1);
+    position: fixed;
+    width: 100%;
+    top: 0;
+    z-index: 2;
+}
+
+.navbar-left {
+    display: flex;
+    align-items: center;
+}
+
+.navbar-left img {
+    width: 50px;
+    height: 50px;
+    margin-right: 10px;
+}
+
+.navbar-right ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+}
+
+.navbar-right li {
+    margin-right: 20px;
+}
+
+.navbar-right a {
+    text-decoration: none;
+    color: #333;
+    font-weight:600;
+    padding: 10px 15px;
+    border-radius: 5px;
+    font-size: 1rem;
+    transition: all 0.3s ease;
+}
+
+.navbar-right a:hover{
+    color: #e25300;
+}
+
+.btn-start a:hover {
+    background-color: #e25300;
+    color: white;
+}
+
+.btn-start a {
+    background-color: #007bff;
+    color: #fff;
+}
+
+main {
+    text-align: center;
+    padding: 40px;
+    height: 100vh;
+}
+
+h1 {
+    font-size: 1.5em;
+    margin-bottom: 30px;
+    font-weight: bold;
+}
+
+.header-kelas {
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+}
+
+.d-header {
+    background-image: url(TKJ.png);
+    background-size: cover;
+    width: 1897px;
+    height: 852px;
+}
+
+.hero {
+    position: relative;
+    width: 100%;
+    height: 740px;
+}
+
+.hero-button {
+    position: absolute;
+    bottom: 100px; /* Mengatur jarak tombol dari bawah gambar */
+    left: 10%;
+    transform: translateX(-20%);
+    gap: 10px; 
+    border: none;
+}
+
+.hero-button .login {
+    padding: 10px 20px;
+    font-size: 1rem;
+    border-radius: 20px;
+    cursor: pointer;
+    border: none;
+    height: 40px;
+    font-size: 15px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 20%;
+}
+
+.hero-button .login {
+    background-color: #2e54a7;
+    color: white;
+    border: none;
+    bottom: 20%;
+    font-weight: 600;
+    transition: all .3s ease;
+    font-family: "poppins", sans-serif;
+  }
+  
+.hero-button .login:hover{
+    background-color: #e25300;
+  }
+
+.text1 {
+    left: 50%;
+    transform: translateX(-90%);
+    top: 30%;
+    position: absolute;
+    bottom: 5%;
+    justify-content: center;
+    align-items: center;
+    height: 90%;
+    --ff-poppins: "Poppins", sans-serif;
+    font-weight: bolder;
+    color: white;
+    line-height: 70px;
+}
+.t-2 {
+    font-weight: bolder;
+    font-size: 70px;
+    text-shadow: 1px 1px 0px rgb(255, 255, 255),
+      /* stroke di kanan bawah */ -1px -1px 0px rgb(255, 255, 255),
+      /* stroke di kiri atas */ 1px -1px 0px rgb(255, 255, 255),
+      /* stroke di kanan atas / -1px 1px 0px rgb(255, 255, 255); / stroke di kiri bawah */
+}
+
+.text1 t-1 {
+    margin-bottom: 30%;
+}
+.t-1 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #ff7300;
+    width: 45%;
+    height: 60px;
+    text-align: center;
+    margin-bottom: 20px;
+}
+.text1 p {
+    margin-top: 30px;
+    line-height: normal;
+    font-size: 13px;
+    font-weight: 300;
+}
+.title {
+    left: 50%;
+    transform: translateX(-50%);
+    display: flex;
+    position: absolute;
+    bottom: 5%;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 90%;
+    --ff-poppins: "Poppins", sans-serif;
+    font-weight: bolder;
+}
+
+.title-1 {
+    display: flex;
+    margin-bottom: 10rem;
+    gap: 3rem;
+    justify-content: center;
+}
+
+.title h1 {
+    font-size: 7.5rem;
+}
+
+.w-1 {
+    background-color: #ff7b00;
+    color: white;
+    padding: 0 25px;
+    margin-bottom: 2rem;
+    margin-left: 2rem;
+    text-shadow: 2px 2px 0px rgb(255, 255, 255),
+      /* stroke di kanan bawah */ -2px -2px 0px rgb(255, 255, 255),
+      /* stroke di kiri atas */ 2px -2px 0px rgb(255, 255, 255),
+      /* stroke di kanan atas / -2px 2px 0px rgb(255, 255, 255); / stroke di kiri bawah */
+}
+
+.w-2 {
+    background-color: #ffffff;
+    color: #e25300;
+    padding: 0 20px;
+    rotate: 4deg;
+    /* text-shadow: 
+    2px 2px 0px #ffffff, 
+    -2px -2px 0px #e25300, 
+    2px -2px 0px #e25300, 
+    -2px 2px 0px #e25300;  */
+}
+
+.w-3 {
+    background-color: black;
+    color: white;
+    padding: 0 20px;
+}
+
+.w-4 {
+    background-color: #6c9bff;
+    color: rgb(255, 255, 255);
+    padding: 0 10px;
+    rotate: -4deg;
+    text-shadow: 2px 2px 0px rgb(255, 255, 255),
+      /* stroke di kanan bawah */ -2px -2px 0px rgb(255, 255, 255),
+      /* stroke di kiri atas */ 2px -2px 0px rgb(255, 255, 255),
+      /* stroke di kanan atas / -2px 2px 0px rgb(255, 255, 255); / stroke di kiri bawah */
+}
+.desc p {
+    left: 50%;
+    transform: translateX(-50%);
+    display: flex;
+    position: absolute;
+    bottom: 20%;
+    justify-content: center;
+    text-align: center;
+    color: white;
+    font-size: 10px;
+}
+
+/* Marquee */
+.marquee {
+    overflow: hidden;
+    white-space: nowrap;
+    display: flex;
+    align-items: center;
+    background-color: rgb(0, 0, 0);
+    height: 50px;
+    color: white;
+    width: 1897px;
+}
+
+.marquee-content {
+    display: inline-flex;
+    gap: 6rem;
+    animation: move-rtl 20s linear infinite;
+}
+
+@keyframes move-rtl {
+    0% {
+        transform: translateX(100%);
+    }
+    100% {
+        transform: translateX(-100%);
+    }
+}
+
+.line{
+    height: 1px;
+    width: 100%;
+    background-color: #6F6767;
+    margin-top: 1rem;
+}
+
+.title-card {
+    font-size: 2rem;
+    margin-top: 4.5rem;
+    text-align: center;
+}
+
+.card-container {
+    display: flex;
+    justify-content: center;
+    gap: 5rem;
+    margin-top: 4.5rem;
+    padding-top: 50px;
+}
+
+.card1 {
+    background-image: url(XTKJ1.jpg);
+    background-size: cover;
+    position: relative;
+    max-width: 250px;
+    height: 250px;
+    border-radius: 5px;
+    padding: 1rem;
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    gap: 7.5px;
+    transition: 0.5s ease;
+    color: white;
+}
+
+.card1::after {
+    content: "";
+    position: absolute;
+    inset: 0;
+    opacity: 0.5;
+    transition: 0.3s ease;
+}
+
+.card1:hover::after {
+    opacity: 0.25;
+    
+}
+
+.card2 {
+    background-image: url(XIITKJ2.jpg);
+    background-size: cover;
+    position: relative;
+    max-width: 250px;
+    height: 250px;
+    border-radius: 5px;
+    padding: 1rem;
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    gap: 7.5px;
+    transition: 0.5s ease;
+    color: white;
+}
+
+.card2::after {
+    content: "";
+    position: absolute;
+    inset: 0;
+    opacity: 0.5;
+    transition: 0.3s ease;
+}
+
+.card2:hover::after {
+    opacity: 0.25;
+    
+}
+
+.card3 {
+    background-image: url(XIITKJ3.jpg);
+    background-size: cover;
+    position: relative;
+    max-width: 250px;
+    height: 250px;
+    border-radius: 5px;
+    padding: 1rem;
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    gap: 7.5px;
+    transition: 0.5s ease;
+    color: black;
+}
+
+.card3::after {
+    content: "";
+    position: absolute;
+    inset: 0;
+    opacity: 0.5;
+    transition: 0.3s ease;
+}
+
+.card3:hover::after {
+    opacity: 0.25;
+    
+}
+
+.cardHeader {
+    text-transform: uppercase;
+    position: relative;
+    width: max-content;
+    font-weight: bold;
+    transition: all 0.5s ease;
+}
+.cardHeader::after {
+    content: "";
+    width: calc(100% + 1rem);
+    height: 2.5px;
+    transform: translateX(calc(-100% - 1rem));
+    background: #3C80FF;
+    bottom: -2px;
+    left: 0;
+    position: absolute;
+    opacity: 0;
+}
+
+.details {
+    z-index: 2;
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+    transform: translateY(95%);
+    transition: all 0.5s ease;
+    background: transparent;
+    backdrop-filter: blur(3px);
+}
+
+.cardText {
+    font-size: 12px;
+}
+
+.button {
+    background-color: #3C80FF;
+    color: white;
+    border: none;
+    font-size: 14px;
+    font-weight: 700;
+    width: 40%;
+    border-radius: 3px;
+    cursor: pointer;
+}
+.card1:hover .details {
+    transform: translateY(0%);
+    transition-delay: 0.3s;
+}
+.card1:hover .cardHeader::after {
+    transform: translateX(-1rem);
+    transition: 0.5s ease;
+    opacity: 1;
+}
+.card1:hover {
+    transform: scale(1.1);
+    border-radius: 15px;
+}
+
+.card2:hover .details {
+    transform: translateY(0%);
+    transition-delay: 0.3s;
+}
+.card2:hover .cardHeader::after {
+    transform: translateX(-1rem);
+    transition: 0.5s ease;
+    opacity: 1;
+}
+.card2:hover {
+    transform: scale(1.1);
+    border-radius: 15px;
+}
+
+.card3:hover .details {
+    transform: translateY(0%);
+    transition-delay: 0.3s;
+}
+.card3:hover .cardHeader::after {
+    transform: translateX(-1rem);
+    transition: 0.5s ease;
+    opacity: 1;
+}
+.card3:hover {
+    transform: scale(1.1);
+    border-radius: 15px;
+}
+
+/* Footer */
+.footer {
+    background-color: #0d1a32; /* Warna biru gelap */
+    color: #ffffff;
+    padding: 40px 0;
+    z-index: 100;
+    position: relative;
+}
+
+.footer-content {
+    display: flex;
+    justify-content: space-around;
+    max-width: 1200px;
+    margin: auto;
+    flex-wrap: wrap;
+}
+
+.footer-section {
+    flex: 1;
+    margin: 20px;
+}
+
+.logo-footer {
+    width: 80px;
+    margin-bottom: 15px;
+}
+
+.logo-desc p {
+    font-size: 14px;
+    line-height: 1.6;
+}
+
+.social-icons {
+    margin-top: 10px;
+}
+
+.social-icons a {
+    display: inline-block;
+    margin-right: 10px;
+}
+
+.social-icons img {
+    width: 30px;
+    height: 30px;
+}
+
+.links h3, .contact-info h3 {
+    font-size: 18px;
+    margin-bottom: 10px;
+    font-weight: bold;
+}
+
+.links ul {
+    list-style-type: none;
+}
+
+.links ul li {
+    margin-bottom: 8px;
+}
+
+.links ul li a {
+    color: #f07a36; /* Warna kuning */
+    text-decoration: none;
+    font-size: 15px;
+}
+
+.links ul li a:hover {
+    color: #ffffff; /* Putih saat hover */
+}
+
+
+.contact-info p {
+    font-size: 14px;
+    line-height: 1.6;
+}
+
+.footer-section{
+    display: flex;
+    flex-direction: column;
+    gap: .5rem;
+}
+
+.footer-bottom {
+    width: 100%;
+    text-align: center;
+    padding: 10px;
+    background-color: #0b1527;
+    font-size: 14px;
+    color: #cccccc;
+    position: absolute;
+    bottom: 0;
+}

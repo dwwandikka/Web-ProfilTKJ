@@ -1,0 +1,268 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    font-family: "Poppins", sans-serif;
+    background-color: #C4C4C4;
+}
+
+.main-container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 100vh;
+}
+
+.container{
+    width: 1200px;
+    height: 700px;
+    border-radius: 20px;
+    background: linear-gradient(to top, #3C80FF 50%, white 50%);
+    display: flex;
+    position: relative; 
+}
+
+.left-side{  
+    width: 50%;
+    height: 100%;
+    border-radius: 20px 100px 20px 20px;
+    background-image: linear-gradient(#002873, #3C80FF );
+    position: relative;
+}
+
+.personwcom{
+    position: absolute;
+    z-index: 100;
+    bottom: -30px;
+    left: 70px;
+}
+
+.img-cloud{
+    position: absolute;
+    left: 35%;
+    top: 20px;
+}
+
+.logo{
+    display: flex;
+    padding: 40px 40px 20px 40px;
+}
+
+.logo h2,p{
+    color: white;
+}
+
+.logo p{
+    font-size: 14px;
+    font-weight: 300;
+}
+
+.logo-name{
+    margin-left: 10px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    line-height: 22px;
+}
+
+.img-student{
+    position: absolute;
+    bottom: 0;
+    z-index: 100;
+}
+
+.book-1{
+    position: absolute;
+    right: 50px;
+    top: 70px;
+}
+
+.book-2{
+    position: absolute;
+    right: 150px;
+    top: 170px;
+}
+
+
+.right-side{
+    width: 50%;
+    height: 100%;
+    background-color: white;
+    border-radius: 20px 20px 20px 100px;
+    position: absolute;
+    right: 0;
+}
+
+.languange{
+    display: flex;
+    align-items: center;
+    gap: .5rem;
+    font-weight: 500;
+    margin-top: 3rem;
+    margin-right: 2.5rem;
+    justify-content: flex-end;
+}
+
+.back-arrow{
+    position: absolute;
+    left: 30px;
+}
+
+
+.languange p{
+    color: #5D5C5C;
+}
+
+form{
+    padding: 30px 70px;
+}
+
+form h1{
+    font-size: 1.8rem;
+}
+
+.form-data{
+    display: flex;
+    gap: .5rem;
+    flex-direction: column;
+}
+
+.data{
+    margin-top: .8rem;
+    font-size: 1rem;
+    font-weight: 500;
+}
+
+.data-email, .data-nama{
+    border: 1px solid #003EB2;
+    border-radius: 10px;
+}
+
+.data-pass{
+    display: flex;
+    border: 1px solid #003EB2;
+    border-radius: 10px;
+    align-items: center;
+}
+
+input[type="text"], 
+input[type="email"], input[type="password"]{
+    outline: none;
+    padding: 10px;
+    font-family: "Poppins", sans-serif;
+    font-weight: 500;
+    border: none;
+    border-radius: 10px;
+    width: 95%;
+    transition: all 0.3s ease;
+}
+
+
+.data label::after{
+    content: "*";
+    color: red;
+}
+
+.checked{
+    margin-top: .5rem;
+    display: flex;
+    align-items: center;
+    gap: .5rem;
+}
+
+.button{
+    margin-top: .8rem;
+    display: flex;
+    flex-direction: column;
+    gap: .5rem;
+    width: 95%;
+}
+
+.button button{
+    width: 100%;
+    font-family: "Poppins", sans-serif;
+    font-weight: 500;
+}
+
+.btn-create{
+    padding: 15px;
+    border-radius: 40px;
+    border: none;
+    color: white;
+    background-color: #003EB2;
+    font-size: 1.1rem;
+    cursor: pointer;
+    width: 95%;
+    font-family: "Poppins", sans-serif;
+    font-weight: 500;
+    box-shadow: 0 4px #031c49;
+    opacity: .9;
+    transition: all 0.3s;
+}
+
+.btn-create:hover{
+    opacity: 1;
+}
+
+.btn-create:active{
+    transform: translateY(3px);
+    box-shadow: 0 1px #031c49;
+}
+
+.btn-sign{
+    padding: 15px;
+    border-radius: 10px;
+    background-color: #D9D9D9;
+    border: none;
+    font-size: 1.1rem;
+    cursor: pointer;
+    width: 95%;
+    font-family: "Poppins", sans-serif;
+    font-weight: 500;
+    text-decoration: none;
+    text-align: center;
+    color: #002873;
+    background: none;
+    border: 3px solid #E1ECFF;
+    transition: all 0.3s ease;
+}
+
+.btn-sign:hover{
+    background-color: #E1ECFF;
+    color: #002873;
+}
+
+.other-regis{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: .5rem;
+    width: 95%;
+}
+
+.other-regis p{
+    font-size: .8rem;
+    color: #5D5C5C;
+}
+
+.other-regis label{
+    height: 0.5px;
+    width: 74.11px;
+    background-color: #5D5C5C;
+    display: block;
+}
+
+.regis-media{
+    margin-top: .5rem;
+    gap: .5rem;
+    display: flex;
+    justify-content: center;
+    width: 95%;
+}
