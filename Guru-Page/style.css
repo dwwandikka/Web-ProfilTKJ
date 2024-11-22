@@ -91,8 +91,8 @@ body{
   
   .hero-button {
     position: absolute;
-    bottom: 100px; /* Mengatur jarak tombol dari bawah gambar */
-    left: 7%;
+    bottom: 160px; /* Mengatur jarak tombol dari bawah gambar */
+    left: 8%;
     transform: translateX(-20%);
     gap: 10px; 
     border: none;
@@ -128,9 +128,9 @@ body{
 
   
   .text1 {
-    left: 40%;
+    left: 50%;
     transform: translateX(-90%);
-    top: 30%;
+    top: 20%;
     position: absolute;
     bottom: 5%;
     justify-content: center;
@@ -142,8 +142,12 @@ body{
     line-height: 70px;
   }
   .t-2 {
-    font-weight: bolder;
+    font-weight: bold;
     font-size: 70px;
+    text-shadow: 2px 2px 0px rgb(255, 255, 255),
+    /* stroke di kanan bawah */ .5 .5  0px rgb(255, 255, 255),
+    /* stroke di kiri atas */ .5 .5 0px rgb(255, 255, 255),
+    .5 .5 0px rgb(255, 255, 255);
   }
   .text1 t-1 {
     margin-bottom: 30%;
@@ -197,7 +201,7 @@ body{
     text-shadow: 2px 2px 0px rgb(255, 255, 255),
       /* stroke di kanan bawah */ -2px -2px 0px rgb(255, 255, 255),
       /* stroke di kiri atas */ 2px -2px 0px rgb(255, 255, 255),
-      /* stroke di kanan atas / -2px 2px 0px rgb(255, 255, 255); / stroke di kiri bawah */
+      stroke di kanan atas / -2px 2px 0px rgb(255, 255, 255); / stroke di kiri bawah
   }
   
   .w-2 {
@@ -307,8 +311,8 @@ body{
 }
 
 .card-detail{
-    width: 400px;
-    height: 601px;
+    width: 300px;
+    height: 500px;
 }
 
 .biodata-teacher h1 {
@@ -331,8 +335,8 @@ body{
 }
 
 .img-wrapper{
-    width: 400px;
-    height: 402px;
+    width: 300px;
+    height: 302px;
     overflow: hidden;
     border-radius: 5px;
     cursor: pointer;
@@ -391,8 +395,8 @@ body{
 }
 
 .modal-inner {
-    width: 60%;
-    height: 55%;
+    width: 70%;
+    height: 75%;
     display: flex;
     /* align-items: center; */
     background-color: white;

@@ -309,7 +309,7 @@ body {
     font-weight:600;
     padding: 10px 15px;
     border-radius: 5px;
-    font-size: 14px;
+    font-size: 1.6rem;
     transition: all 0.3s ease;
     
 }
@@ -350,7 +350,7 @@ body {
 .hero-button {
   position: absolute;
   bottom: 100px; 
-  left: 10%;
+  left: 6%;
   transform: translateX(-20%);
   gap: 10px; 
   border: none;
@@ -541,7 +541,7 @@ body {
   font-size: 10rem;
   position: absolute;
   top: 15rem;
-  left: 50rem;
+  left: 30rem;
 }
 
 
@@ -947,7 +947,7 @@ p.kata1, p.kata{
      align-items: center;
      text-align: center; */
      font-weight: bolder;
-     margin-left: 80px;
+     margin-left: 65px;
      color: rgb(17, 70, 218);
      text-shadow: 1px 1px 0px rgb(17, 70, 218),
        /* stroke di kanan bawah */ -0.5px -0.5px 0px rgb(17, 70, 218),

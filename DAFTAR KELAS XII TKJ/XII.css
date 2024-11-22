@@ -109,7 +109,7 @@ h1 {
 .hero-button {
     position: absolute;
     bottom: 100px; /* Mengatur jarak tombol dari bawah gambar */
-    left: 10%;
+    left: 6%;
     transform: translateX(-20%);
     gap: 10px; 
     border: none;
@@ -159,12 +159,12 @@ h1 {
     line-height: 70px;
 }
 .t-2 {
-    font-weight: bolder;
+    font-weight: bold;
     font-size: 70px;
-    text-shadow: 1px 1px 0px rgb(255, 255, 255),
-      /* stroke di kanan bawah */ -1px -1px 0px rgb(255, 255, 255),
-      /* stroke di kiri atas */ 1px -1px 0px rgb(255, 255, 255),
-      /* stroke di kanan atas / -1px 1px 0px rgb(255, 255, 255); / stroke di kiri bawah */
+    text-shadow: 2px 2px 0px rgb(255, 255, 255),
+    /* stroke di kanan bawah */ .5 .5  0px rgb(255, 255, 255),
+    /* stroke di kiri atas */ .5 .5 0px rgb(255, 255, 255),
+    .5 .5 0px rgb(255, 255, 255);
 }
 
 .text1 t-1 {
@@ -444,6 +444,7 @@ h1 {
     width: 40%;
     border-radius: 3px;
     cursor: pointer;
+    padding:10px;
 }
 .card1:hover .details {
     transform: translateY(0%);
